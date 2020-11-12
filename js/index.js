@@ -185,6 +185,20 @@ function selectAnswer(e) {
 }
 
 
+function quizOutcome() {
+    if(score > 6){
+        $("#outcome").html(`<div class="text-center">
+       
+        <h2> Your knowledge about Italian Geography and general informations it is not bad but can improve, you have answered correctly more than 6 questions</h2>
+      <a href="<a href="http://www.bbc.com/travel/europe/italy/">If you are interested to learn more about this county click this link</a></div>`);
+
+    }else if(score < 5) {
+        $("#outcome").html(`<div class="text-center">  
+         <a href="https://www.nationalgeographic.com/travel/destinations/europe/italy/">Visit the National Geographic website to learn much more about Italy</a> </div>`);
+    }
+}
+
+
 
 
 
