@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-
-
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-
-
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
     ></script>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
     <script type="text/javascript">
       (function () {
         emailjs.init("user_5u9yIZ0m0BaHHQwavMgbq");
@@ -24,54 +27,67 @@
   </head>
 
   <body>
-<nav class="navbar-fixed-top navbar-expand-lg navbar-dark bg-dark navbar-nav ml-auto">
-			<h2 class="title-navbar text-left ml-4"></h2>
-			<a class="navbar-brand" href="#"> </a>
-			<button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-			<!-- Navbar containing all the navigation pages available on the website  -->
-			<div class="collapse navbar-collapse" id="navbarText">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html">Take the quiz</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="map.html">Check the Map with the most important cities</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="mail.html">Sign Up</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+    <nav
+      class="navbar-fixed-top navbar-expand-lg navbar-dark bg-dark navbar-nav ml-auto"
+    >
+      <a class="navbar-brand" href="#"> </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- <p id="signup-message">Your information has been captured successfully</p> -->
+      <!-- Navbar containing all the navigation pages available on the website  -->
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Take the quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="map.html"
+              >Check the Map with the most important cities</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mail.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <form id="form" class="mt-5">
-      <div class="field">
-        <label for="from_name">Enter your name and surname</label>
-        <input type="text" name="from_name" id="from_name" />
-      </div>
-      <div class="field">
-        <label for="project_request"
-          >Write us releavant informations that can improve our quiz or questions related to Italy</label
-        >
-        <input type="text" name="project_request" id="project_request" />
-      </div>
-      <div class="field">
-        <label for="from_email">Enter your contact email</label>
-        <input type="text" name="from_email" id="from_email" />
-      </div>
+    <div class="contaier-fluid container-form">
+      <div class="row">
+        <div class="col-sm-8">
+          <form id="form" class="mt-5">
+            <div class="field">
+              <label for="from_name">Enter your name and surname</label>
+              <input type="text" name="from_name" id="from_name" />
+              <br />
+              <div class="field">
+                <label for="from_email">Enter your contact E-mail</label>
+                <input type="text" name="from_email" id="from_email" />
+              </div>
+            </div>
+            <br />
+            <div class="field">
+              <label for="project_request"
+                >Cooperate to improve our website or register to receive
+                updates</label
+              >
+              <input type="text" name="project_request" id="project_request" />
 
-      <input type="submit" id="button" value="Send Email" />
-    </form>
+              <input type="submit" id="button" value="Send Email" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
