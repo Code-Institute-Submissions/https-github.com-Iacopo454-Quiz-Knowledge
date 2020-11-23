@@ -6,7 +6,7 @@ $(document).ready(function () {
 let questions = [
   {
     question: "What is the italian capital?",
-    // img: "assets/images/",
+    img: "assets/images/rome.jpg",
     answers: [
       { text: "Rome", correct: true },
       { text: "Turin", correct: false },
@@ -16,7 +16,7 @@ let questions = [
   },
   {
     question: "How many seas has Italy?",
-    // img: "assets/images/",
+    img: "assets/images/sea.jpg",
     answers: [
       { text: "Two", correct: false },
       { text: "Four", correct: true },
@@ -26,7 +26,7 @@ let questions = [
   },
   {
     question: "Who was Leonardo Da Vinci?",
-    // img: "assets/images/",
+    img: "assets/images/leonardo.jpg",
     answers: [
       { text: "A politician of the roman empire", correct: false },
       { text: "a builder", correct: false },
@@ -36,7 +36,7 @@ let questions = [
   },
   {
     question: "Why Garibaldi is famous?",
-    // img: "assets/images/",
+    img: "assets/images/garibaldi.jpg",
     answers: [
       { text: "He was a famour artist", correct: false },
       { text: "He lead a troop of a 1000 men to free Italy", correct: true },
@@ -47,7 +47,7 @@ let questions = [
   {
     question:
       "What is considerate internationally the fashion city in Italy and worldwide?",
-    // img: "assets/images/",
+    img: "assets/images/milan.jpg",
     answers: [
       { text: "Turin", correct: false },
       { text: "Rome", correct: false },
@@ -57,7 +57,7 @@ let questions = [
   },
   {
     question: "In what italian city was the pizza invented?",
-    // img: "assets/images/",
+    img: "assets/images/pizza.jpg",
     answers: [
       { text: "Milan", correct: false },
       { text: "Bologna", correct: false },
@@ -67,7 +67,7 @@ let questions = [
   },
   {
     question: "What is the most drunk aperitif in Italy?",
-    // img: "assets/images/",
+    img: "assets/images/aperol.jpg",
     answers: [
       { text: "Aperol Spritz", correct: true },
       { text: "Amaretto coffee", correct: false },
@@ -78,7 +78,7 @@ let questions = [
   {
     question:
       "In what region of Italy is the National Museum of the Italian Risorgimento?",
-    // img: "assets/images/",
+    img: "assets/images/museum.jpg",
     answers: [
       { text: "Sicily", correct: false },
       { text: "Puglia", correct: false },
@@ -88,7 +88,7 @@ let questions = [
   },
   {
     question: "What does it mean in italian Prego?",
-    // img: "assets/images/",
+    img: "assets/images/prego.jpg",
     answers: [
       { text: "Thank you", correct: false },
       { text: "You are welcome", correct: true },
@@ -98,7 +98,7 @@ let questions = [
   },
   {
     question: "Is what part of Italy is Venice located?",
-    // img: "assets/images/",
+    img: "assets/images/venice.jpg",
     answers: [
       { text: "North", correct: true },
       { text: "South", correct: false },
@@ -120,22 +120,34 @@ let tryAgain = document.getElementById("try-again-btn");
 let restartGame = document.getElementById("restart-button");
 let score = 0;
 let answerButtonsArray;
-startGame();
 
-/*** JQuery function: Onclick of the button hide the homepage with the id=page and show instead the quiz questions */
-function startGame() {
-  $("#start-button").click(function () {
-    $("#page").hide("slow");
-    $(".question").show("slow");
-  });
+$("#start-button").click(function () {
+  $("#page").hide("slow");
+  $(".question").show("slow");
+});
 
-  /***  CHANGE THE ORDER OF THE QUESTIONS **/
+startQuiz();
 
+/**
+ * Shuffles the order of the quiz questions, starts the quiz and shows first question.
+ */
+function startQuiz() {
+  // Change the order of the questions.
   shuffledQuestions = questions.sort(() => Math.random() - 0.5);
-  /*question index*/
+
+  // Question index
   currentQuestion = 0;
+
   nextQuestion();
 }
+
+/**showing the next question */
+function nextQuestion() {
+  nextButton.classList.add("d-none");
+  showQuestion(shuffledQuestions[currentQuestion]);
+  $(".answer-btn").prop("disabled", false);
+}
+
 /***question container with questions,images and answer buttons relative to each question***/
 
 function showQuestion(question) {
@@ -161,52 +173,40 @@ function selectAnswer(e) {
 
   /**disabling the answers after each click**/
   $(".answer-btn").prop("disabled", true);
-  Array.from(answersButtonsClass).forEach(button => {
+  Array.from(answersButtonsClass).forEach((button) => {
     setStatusClass(button, button.dataset.correct);
     answerButtonsArray.push(button);
   });
   if (shuffledQuestions.length > currentQuestion + 1) {
-     nextButton.classList.remove("d-none");
+    nextButton.classList.remove("d-none");
   } else {
     scoreContainer.classList.remove("d-none");
     questionContainer.classList.add("d-none");
     $("h3").hide();
     scoreElement.innerText = "Your score is: " + score + "/" + questions.length;
     quizOutcome();
-    tryAgain.addEventListener('click', () => {
-    scoreContainer.classList.add("d-none");
-    score = 0;
-    startGame();
-    resetButtonState();
-    questionContainer.classList.remove("d-none");
-    $("h3").show();   
-});
+    tryAgain.addEventListener("click", () => {
+      scoreContainer.classList.add("d-none");
+      score = 0;
+      startQuiz();
+      resetButtonState();
+      questionContainer.classList.remove("d-none");
+      $("h3").show();
+    });
   }
 }
 
-
 function quizOutcome() {
-    if(score > 6){
-        $("#outcome").html(`<div class="text-center">
-       
-        <h2> Your knowledge about Italian Geography and general informations it is not bad but can improve, you have answered correctly more than 6 questions</h2>
-      <a href="<a href="http://www.bbc.com/travel/europe/italy/">If you are interested to learn more about this county click this link</a></div>`);
-
-    }else if(score < 5) {
-        $("#outcome").html(`<div class="text-center">  
-         <a href="https://www.nationalgeographic.com/travel/destinations/europe/italy/">Visit the National Geographic website to learn much more about Italy</a> </div>`);
-    }
+  if (score > 6) {
+    $("#outcome").html(`<div class="text-center">  
+         <a href="https://www.youtube.com/watch?v=GXoEpNjgKzg target="_blank">Watch the Youtube documentary to learn more</a> </div>`);
+  } else {
+    $("#outcome").html(`<div class="text-center">  
+         <a href="https://www.nationalgeographic.com/travel/destinations/europe/italy/ target="_blank">We recommend you to check the National Geographic website to learn more about Italy</a> 
+          
+         </div>`);
+  }
 }
-
-
-
-
-
-
-
-
-
-// da cancellare
 
 /**function onlclick add a class colour if correct green or if else red**/
 function setStatusClass(element, correct) {
@@ -229,28 +229,12 @@ nextButton.addEventListener("click", () => {
   nextQuestion();
 });
 /**resetting the buttons**/
-function resetButtonState(){
-  answerButtonsArray.forEach( element => {
+function resetButtonState() {
+  answerButtonsArray.forEach((element) => {
     clearStatusClass(element);
   });
 }
-/**showing the next question */
-function nextQuestion() {
-  nextButton.classList.add("d-none");
-  showQuestion(shuffledQuestions[currentQuestion]);
-   $(".answer-btn").prop("disabled", false);
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 /**Quiz functions taken a sample from Youtube on this link:   https://www.youtube.com/watch?v=49pYIMygIcU */
+
+// Photographs taken from: https://pxhere.com/en/photo/911698
