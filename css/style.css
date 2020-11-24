@@ -16,9 +16,10 @@ body {
 
 .ques-img-container {
   width: 500px;
-  height: 600px;
+  height: 400px;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0,0,15px,0;
+  
 }
 #next-button  {
     margin-bottom:10px;
