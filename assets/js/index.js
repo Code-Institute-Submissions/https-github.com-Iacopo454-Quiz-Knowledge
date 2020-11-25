@@ -123,7 +123,7 @@ let answerButtonsArray;
 
 $("#start-button").click(function () {
   $("#page").hide("slow");
-  $(".question").show("slow");
+  $(".question").show("fast");
 });
 
 startQuiz();
