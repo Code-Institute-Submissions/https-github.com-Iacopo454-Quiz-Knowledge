@@ -1,7 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto|Fjalla+One&display=swap rel="stylesheet">display:100,200,300,400,500,600,700|Roboto: 100,200,300,400,500,600,700,'); */
-
 body {
-	font-family: 'Fjalla One', 'Roboto', sans-serif;
+	font-family: 'Nerko One', 'cursive', sans-serif;
 }
 
 
@@ -52,6 +50,15 @@ div#map {
     #map {
         height: 700px;
     }
+
+.container-form { 
+    padding:0px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+
+
 }
 
 @media only screen and (min-width: 1170px) {

@@ -199,7 +199,7 @@ function selectAnswer(e) {
 function quizOutcome() {
   if (score > 6) {
     $("#outcome").html(`<div class="text-center">  
-         <a href="https://www.youtube.com/watch?v=GXoEpNjgKzg target="_blank">Watch the Youtube documentary to learn more</a> </div>`);
+         <a href="https://www.italymagazine.com/featured-story/five-documentaries-take-you-italy target="_blank">Watch this documentary if you are passionate about Italy and want to learn more</a> </div>`);
   } else {
     $("#outcome").html(`<div class="text-center">  
          <a href="https://www.nationalgeographic.com/travel/destinations/europe/italy/ target="_blank">We recommend you to check the National Geographic website to learn more about Italy</a> 
