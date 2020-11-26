@@ -1,7 +1,8 @@
+
 $(document).ready(function () {
   $(".question").hide();
 });
-/***QUIZ QUESTIONS***/
+/**QUIZ QUESTIONS**/
 
 let questions = [
   {
@@ -128,27 +129,26 @@ $("#start-button").click(function () {
 
 startQuiz();
 
-/**
- * Shuffles the order of the quiz questions, starts the quiz and shows first question.
- */
+/**Shuffles the order of the quiz questions, starts the quiz and shows first question**/
 function startQuiz() {
-  // Change the order of the questions.
-  shuffledQuestions = questions.sort(() => Math.random() - 0.5);
 
-  // Question index
+  /**Change the order of the questions**/
+ shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+
+  /** Question index**/
   currentQuestion = 0;
 
   nextQuestion();
 }
 
-/**showing the next question */
+/**showing the next question**/
 function nextQuestion() {
   nextButton.classList.add("d-none");
   showQuestion(shuffledQuestions[currentQuestion]);
   $(".answer-btn").prop("disabled", false);
 }
 
-/***question container with questions,images and answer buttons relative to each question***/
+/**question container with questions,images and answer buttons relative to each question**/
 
 function showQuestion(question) {
   questionElement.innerText = question.question;
@@ -163,7 +163,7 @@ function showQuestion(question) {
     button.addEventListener("click", selectAnswer);
   });
 }
-/*** empty array to reset the buttons***/
+/**empty array to reset the buttons**/
 function selectAnswer(e) {
   answerButtonsArray = [];
   const selectedButton = e.target;
@@ -235,6 +235,4 @@ function resetButtonState() {
   });
 }
 
-/**Quiz functions taken a sample from Youtube on this link:   https://www.youtube.com/watch?v=49pYIMygIcU */
 
-// Photographs taken from: https://pxhere.com/en/photo/911698
