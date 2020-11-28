@@ -2,12 +2,11 @@ body {
 	font-family: 'Nerko One', 'cursive', sans-serif;
 }
 
-#next-button {
+/* #next-button {
     position: absolute;
-    top: -70px;
+    top: -0px;
     
-}
-
+} */
 .green {
   background-color: green;
   color: black;
@@ -24,10 +23,7 @@ body {
   margin: 0;
   
 }
-/* #next-button  {
-    margin-top:10px;
 
-} */
 
 /* map.html */
 
@@ -39,12 +35,9 @@ body {
     background-color: #e7eaf0;
 }
 
-/* .image,container {
-    width: 500px;
-    height:500px;
-    overflow:hidden;
-} */
+@media only screen and (min-width: 368px) {
 
+}
 /*--------------------------------------------Map*/
 div#map {
   min-height: 360px;
@@ -58,16 +51,6 @@ div#map {
 
 @media only screen and (min-width:700px) {
 
-    /* .ques-img-container {
-  width: 500px;
-  height: 400px;
-  overflow: hidden;
-  margin: 0;
-  
-} */
-}
-
-
 
 .container-form { 
     padding:0px;
@@ -75,22 +58,12 @@ div#map {
     margin-right:10px;
 }
 
-/* .ques-img-container {
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  margin: 0;
-  
-} */
-
 }
 
 @media only screen and (min-width: 1170px) {
     #map {
         height: 1100px;
     }
-}
-
 
 /* mail.html */
 
@@ -103,4 +76,7 @@ div#map {
     padding:0px;
     margin-left:10px;
     margin-right:10px;
+}
+}
+
 }
