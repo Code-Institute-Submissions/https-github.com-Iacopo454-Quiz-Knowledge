@@ -196,6 +196,7 @@ function selectAnswer(e) {
   }
 }
 
+  /**function with two statements of if or Else depending on the score**/
 function quizOutcome() {
   if (score > 6) {
     $("#outcome").html(`<div class="text-center">  
