@@ -2,6 +2,11 @@ body {
 	font-family: 'Nerko One', 'cursive', sans-serif;
 }
 
+#next-button {
+    position: absolute;
+    top: -70px;
+    
+}
 
 .green {
   background-color: green;
