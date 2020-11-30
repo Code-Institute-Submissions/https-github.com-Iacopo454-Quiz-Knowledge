@@ -26,23 +26,23 @@ let questions = [
     ],
   },
   {
-    question: "Who was Leonardo Da Vinci?",
+    question: "What is Leonardo Da Vinci best known for?",
     img: "assets/images/leonardo.jpg",
     answers: [
-      { text: "A politician of the roman empire", correct: false },
-      { text: "a builder", correct: false },
-      { text: "an artist, scientist,engineer and more...", correct: true },
-      { text: "a theft", correct: false },
+      { text: "Mona Lisa", correct: false },
+      { text: "invented the atomic", correct: false },
+      { text: "He was a politician", correct: true },
+      { text: "He was a soldier", correct: false },
     ],
   },
   {
     question: "What is the name of this tower?",
     img: "assets/images/pisa.jpg",
     answers: [
-      { text: "He was a famour artist", correct: false },
-      { text: "He lead a troop of a 1000 men to free Italy", correct: true },
-      { text: "he was a rebel", correct: false },
-      { text: "I have no idea", correct: false },
+      { text: "Torre Normanna", correct: false },
+      { text: "Tower of Pisa", correct: true },
+      { text: "Maestra Tower", correct: false },
+      { text: "Tower of Bergamo", correct: false },
     ],
   },
   {
@@ -200,10 +200,10 @@ function selectAnswer(e) {
 function quizOutcome() {
   if (score > 6) {
     $("#outcome").html(`<div class="text-center">  
-         <a href="https://www.italymagazine.com/featured-story/five-documentaries-take-you-italy target="_blank">Watch this documentary if you are passionate about Italy and want to learn more</a> </div>`);
+         <a href="https://en.wikipedia.org/wiki/Culture_of_Italy target="_blank">Well done you have a good knowledge.Check the Wikipedia link if you want to learn much more about Italy</a> </div>`);
   } else {
     $("#outcome").html(`<div class="text-center">  
-         <a href="https:https://en.wikipedia.org/wiki/Culture_of_Italy target="_blank">We recommend you to check the National Geographic website to learn more about Italy</a> 
+         <a href="https://www.youtube.com/watch?v=MyypvjfB2RI target="_blank">Click on this link and watch the documentary if you want to learn more about Italy</a> 
           
          </div>`);
   }
