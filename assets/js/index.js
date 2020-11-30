@@ -36,8 +36,8 @@ let questions = [
     ],
   },
   {
-    question: "Why Garibaldi is famous?",
-    img: "assets/images/garibaldi.jpg",
+    question: "What is the name of this tower?",
+    img: "assets/images/pisa.jpg",
     answers: [
       { text: "He was a famour artist", correct: false },
       { text: "He lead a troop of a 1000 men to free Italy", correct: true },
@@ -203,7 +203,7 @@ function quizOutcome() {
          <a href="https://www.italymagazine.com/featured-story/five-documentaries-take-you-italy target="_blank">Watch this documentary if you are passionate about Italy and want to learn more</a> </div>`);
   } else {
     $("#outcome").html(`<div class="text-center">  
-         <a href="https://www.nationalgeographic.com/travel/destinations/europe/italy/ target="_blank">We recommend you to check the National Geographic website to learn more about Italy</a> 
+         <a href="https:https://en.wikipedia.org/wiki/Culture_of_Italy target="_blank">We recommend you to check the National Geographic website to learn more about Italy</a> 
           
          </div>`);
   }
