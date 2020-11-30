@@ -17,18 +17,11 @@ body {
 }
 
 
-.card {
-        height: 300px;
-}
 
-.ques-img-container {
-  /* width: 500px;
-  height: 500px;
-  overflow: hidden;
-  margin: 0; */
-      /* margin-left: auto; */
-   
-  
+
+.container-fluid {
+        margin-right: auto;
+    margin-left: auto;
 }
 
 
