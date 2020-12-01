@@ -29,9 +29,9 @@ let questions = [
     question: "What is Leonardo Da Vinci best known for?",
     img: "assets/images/leonardo.jpg",
     answers: [
-      { text: "Mona Lisa", correct: false },
+      { text: "Mona Lisa", correct: true },
       { text: "invented the atomic", correct: false },
-      { text: "He was a politician", correct: true },
+      { text: "He was a politician", correct: false },
       { text: "He was a soldier", correct: false },
     ],
   },
