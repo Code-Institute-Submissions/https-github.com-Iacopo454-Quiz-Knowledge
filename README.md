@@ -32,10 +32,10 @@ At the end of the quiz the user has two different outcomes related to his score.
  Outcomes Statement:
 
 One outcome ***If*** the user result is **> than 6 correct answers**: 
-- a page from the BBC website dedicated to Italy.
+- A Youtube documentary called History of Italy.
 
 Otherwise **(Else)**, if the user has any other score lower than 6 the outcome would be: 
-- A Youtube documentary about Italy.
+- A Youtube documentary called italy the eternal country.
 
 map.html is linked to a google map cluster Api that let the user visualize all world map highlighting the most important cities in the Italian territory.The user can also zoom in and zoom out of the map to any point to see better the interested locations.
 
@@ -77,7 +77,7 @@ All the images are taken from https://pxhere.com/ and http://pexel.com (they bot
 The youtube documentary video is :
 <https://www.youtube.com/watch?v=JUK8j4ZovQs>
 
-the other outcome recommend to check out the BBC website: <http://www.bbc.com/travel/europe/italy >
+the other outcome recommend to check out the BBC website: <http://https://www.youtube.com/watch?v=xCNRAHW-T6E>
 
 Project inspiration and tutorial examples: https://www.youtube.com/watch?v=49pYIMygIcU and https://www.sitepoint.com/simple-javascript-quiz/
 
