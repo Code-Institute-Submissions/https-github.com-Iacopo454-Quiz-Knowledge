@@ -3,7 +3,7 @@ body {
 }
 
 .card-img {
-  height: 500px;
+  height: 400px;
 }
 
 .green {
@@ -42,7 +42,7 @@ div#map {
   }
 
 .card-img {
-    height: 700px;
+    height: 370px;
   }
 }
 @media only screen and (min-width: 600px) {
