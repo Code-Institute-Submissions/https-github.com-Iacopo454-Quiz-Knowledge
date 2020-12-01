@@ -200,10 +200,11 @@ function selectAnswer(e) {
 function quizOutcome() {
   if (score > 6) {
     $("#outcome").html(`<div class="text-center">  
-         <a href="https://en.wikipedia.org/wiki/Culture_of_Italy target="_blank">Well done you have a good knowledge.Check the Wikipedia link if you want to learn much more about Italy</a> </div>`);
+         <a href="http://www.bbc.com/travel/europe/italy  
+         target="_blank">Well done you have a good knowledge.Check the Wikipedia link if you want to learn much more about Italy</a> </div>`);
   } else {
     $("#outcome").html(`<div class="text-center">  
-         <a href="https://en.wikipedia.org/wiki/Italy      target="_blank">Click on this link and watch the documentary if you want to learn more about Italy</a> 
+         <a href="https://www.youtube.com/watch?v=JUK8j4ZovQs   Ûtarget="_blank">Click on this link and watch the documentary if you want to learn more about Italy</a> 
           
          </div>`);
   }
