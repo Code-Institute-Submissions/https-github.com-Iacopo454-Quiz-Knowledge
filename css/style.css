@@ -4,6 +4,7 @@ body {
 
 .card-img {
   height: 550px;
+  width: 50%;
 }
 
 .green {
@@ -45,13 +46,13 @@ div#map {
     height: 480px;
   }
 }
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
 .container-form {
     padding: 0px;
     margin-left: 10px;
     margin-right: 10px;
   }
-}
+} */
 @media only screen and (min-width: 1170px) {
 #map {
     height: 1100px;
