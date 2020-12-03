@@ -2,6 +2,16 @@ body {
   font-family: "Nerko One", "cursive", sans-serif;
 }
 
+
+#form {
+    max-width: 500px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+
 .card-img {
   height: 550px;
   width: 60%;
@@ -61,13 +71,15 @@ div#map {
   /* mail.html */
 
 #project_request {
-    height: 90%;
+    height: 2%;
     width: 200px;
-  }
+    left: 600px;
+    position: absolute;
+}
 
-.container-form {
+/* .container-form {
     padding: 0px;
     margin-left: 10px;
     margin-right: 10px;
-  }
+  } */
 }
