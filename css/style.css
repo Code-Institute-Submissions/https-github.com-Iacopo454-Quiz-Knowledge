@@ -4,7 +4,7 @@ body {
 
 .card-img {
   height: 550px;
-  width: 50%;
+  width: 60%;
 }
 
 .green {
@@ -46,13 +46,7 @@ div#map {
     height: 480px;
   }
 }
-/* @media only screen and (min-width: 600px) {
-.container-form {
-    padding: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-} */
+
 @media only screen and (min-width: 1170px) {
 #map {
     height: 1100px;
@@ -61,13 +55,10 @@ div#map {
   /* mail.html */
 
 #project_request {
-    height: 90%;
+    height: 5%;
     width: 200px;
-  }
+    left: 600px;
+    position: absolute;
+}
 
-.container-form {
-    padding: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
 }

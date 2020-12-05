@@ -66,9 +66,13 @@ The console does not report any errors anymore, execpt one in regard of a favi.i
 * I have used https://jshint.com/ to check if the javascript code had any errors and it does not.
 
 ## Errors and difficulties
-I have not exerienced anymore errors inside the console or of any kind except from the favicon error that it is not anything to worry about as it does not effect the fucntionality of the website.
-I have modified the images sizes before loading using my computer preview and reduced their height for small devices and increased for large screen using the media queries in the style.css file. I believe the images might be replaced with better images quality or there might be a better solution to display them.
-Before making this changes and use the bootstrap grid, the images were displayng in a large size for all screen sizes, causing a bad visualization experience as the next-button was not showing automatically and the user had to scroll down the page to see it each time. 
+* I have not exerienced anymore errors inside the console or of any kind except from the favicon error that it is not anything to worry about as it does not effect the fucntionality of the website.
+
+* I have modified the images sizes before loading using my computer preview and reduced their height for small devices and increased for large screen using the media queries in the style.css file.
+
+* I have not beign able to position in a better place the next button and so the user as to scroll down the page in order to click on it.
+
+* One of the link coming up as outcome of the quiz, the one connecting to the BBC website is not loading anymore the page of the documentary but display an error and the main BBC website. I assume this is due to changes made on the website. The user can still find a documentary about italy from the BBC link. 
 
 
 ## Credits 
