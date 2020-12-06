@@ -20,22 +20,29 @@ As user I want to enjoy myself taking the quiz game and learning something new a
 ## As developer I want to:
 
 Learn more on JavaScript and Api's.
-Learn something new to improve my personal educaiton and enjoy my time taking the quiz. 
+Learn something new to improve my personal knowledge and enjoy my time at the same time by taking the quiz. 
 
 ## Features implemented 
 
 All the project pages display a Bootstrap navbar for better navigation experience.
 
-The Homepage "index.html" contains text that gives an ideas of some of the most interesting aspects of Italy. After reading the text, the bottom of the page has a start quiz button that allow the user to take the quiz after clicking on it. This button will hide entirely the homepage after clicked, and will start to display the quiz questions written inside the js array in the index.js.   Each question will display after choosing an answer a next button to move to the next random question on the click, also each anser button will change color to red if the answer is wrong or green if the answer is correct, at the end of the quiz after the score displaying, the quiz will show also a Try Again button to retake the quiz again, reloading the quiz from a random question. 
+The Homepage "index.html" contains text that gives an ideas of some of the most interesting aspects of Italy. After reading the text, the bottom of the page has a start quiz button that allow the user to take the quiz after clicking on it. This button will hide entirely the homepage after clicked, and will start to display the quiz questions written inside the js array in the index.js.   Each question will display after choosing an answer a next button to move to the next random question on the click, also each answer button will change color to red if the answer is wrong or green if the answer is correct.
+
+function setStatusClass
+
+
+
+
+
+ at the end of the quiz after the score displaying, the quiz will show also a Try Again button to retake the quiz again, reloading the quiz from a random question. 
 At the end of the quiz the user has two different outcomes related to his score.
 
  Outcomes Statement:
 
 One outcome ***If*** the user result is **> than 6 correct answers**: 
-- A Youtube documentary called History of Italy.
-
+- A Youtube documentary "History of Rome" specific on the capital.
 Otherwise **(Else)**, if the user has any other score lower than 6 the outcome would be: 
-- A Youtube documentary called italy the eternal country.
+- A Youtube documentary "History of Italy".
 
 map.html is linked to a google map cluster Api that let the user visualize all world map highlighting the most important cities in the Italian territory.The user can also zoom in and zoom out of the map to any point to see better the interested locations.
 
