@@ -26,15 +26,7 @@ Learn something new to improve my personal knowledge and enjoy my time at the sa
 
 All the project pages display a Bootstrap navbar for better navigation experience.
 
-The Homepage "index.html" contains text that gives an ideas of some of the most interesting aspects of Italy. After reading the text, the bottom of the page has a start quiz button that allow the user to take the quiz after clicking on it. This button will hide entirely the homepage after clicked, and will start to display the quiz questions written inside the js array in the index.js.   Each question will display after choosing an answer a next button to move to the next random question on the click, also each answer button will change color to red if the answer is wrong or green if the answer is correct.
-
-function setStatusClass
-
-
-
-
-
- at the end of the quiz after the score displaying, the quiz will show also a Try Again button to retake the quiz again, reloading the quiz from a random question. 
+The Homepage "index.html" contains text that gives an ideas of some of the most interesting aspects of Italy. After reading the text, the bottom of the page has a start quiz button that allow the user to take the quiz after clicking on it. This button will hide entirely the homepage after clicked, and will start to display the quiz questions written inside the js array in the index.js.   Each question will display after choosing an answer a next button to move to the next random question on the click, also each answer button will change color to red if the answer is wrong or green if the answer is correct at the end of the quiz after the score displaying, the quiz will show also a Try Again button to retake the quiz again, reloading the quiz from a random question. 
 At the end of the quiz the user has two different outcomes related to his score.
 
  Outcomes Statement:
@@ -50,6 +42,7 @@ mail.html is linked to JS mail Api, after registering and entering the Api Key, 
 I can receive the name,surname and contact e-mail of any user that decide to fill the form with the purpose of receiving updates or cooperate. 
 
 ## Technologies Applied:
+
 * HTML5, CSS, JavaScript programming languages
 * Bootstrap 4.5.0 to make the website responsive for all users
 * Balsamiq Wireframes to draw my project ideas
@@ -69,7 +62,7 @@ After this, from the GitHub page of my project, I clicked at the top right of th
 The console does not report any errors anymore, execpt one in regard of a favi.icon which does not effect the functionality in any way.
 * I have checked my project using Google Chrome, Mozilla Firefox, Safari, I also tested it on a Macbook, my highphone 8 and asked to family and friends to test it too.
 * I have checked if my code contains any errors and validate my HTML and CSS code using W3C validator "World Wide Consortium" technology, this the link for the HTML <https://validator.w3.org> and this the link used for the CSS <https://jigsaw.w3.org/css-validator/>.
-* I used this technology to beautify my style.css code <https://www.freeformatter.com/css-beautifier.html#ad-output>, and instead to beautify my HTML pages I used the keyboard commands alt+shift+f.  
+* I used this technology to beautify my style.css code <https://www.prettifier.net/css/>, and instead to beautify my HTML pages I used the keyboard commands alt+shift+f.  
 * I have used https://jshint.com/ to check if the javascript code had any errors and it does not.
 
 ## Errors and difficulties
@@ -85,10 +78,9 @@ The console does not report any errors anymore, execpt one in regard of a favi.i
 ## Credits 
 All the images are taken from https://pxhere.com/ and http://pexel.com (they both provide free domain images)
 
-The youtube documentary video is :
-<https://www.youtube.com/watch?v=JUK8j4ZovQs>
-
-the other outcome recommend to check out the BBC website: <http://https://www.youtube.com/watch?v=xCNRAHW-T6E>
+The two youtube documentary are the following:
+https://www.youtube.com/watch?v=WKpQRXdvAqM
+https://www.youtube.com/watch?v=JUK8j4ZovQs
 
 Project inspiration and tutorial examples: https://www.youtube.com/watch?v=49pYIMygIcU and https://www.sitepoint.com/simple-javascript-quiz/
 
