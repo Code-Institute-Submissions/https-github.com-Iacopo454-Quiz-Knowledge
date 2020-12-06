@@ -14,22 +14,20 @@ The project consist of 3 html pages linked to three JS.files, all easy to naviga
 
 # UX
 ## User stories
-
 As user I want to enjoy myself taking the quiz game and learning something new at the same time, be able to see my score at the end of the quiz, be able to learn more about italian geography checking the italy google map page and be able to sing up to receive updates or to cooperate to improve the website.
 
 ## As developer I want to:
-
 Learn more on JavaScript and Api's.
 Learn something new to improve my personal knowledge and enjoy my time at the same time by taking the quiz. 
 
 ## Features implemented 
-
-All the project pages display a Bootstrap navbar for better navigation experience.
-
-The Homepage "index.html" contains text that gives an ideas of some of the most interesting aspects of Italy. After reading the text, the bottom of the page has a start quiz button that allow the user to take the quiz after clicking on it. This button will hide entirely the homepage after clicked, and will start to display the quiz questions written inside the js array in the index.js.   Each question will display after choosing an answer a next button to move to the next random question on the click, also each answer button will change color to red if the answer is wrong or green if the answer is correct at the end of the quiz after the score displaying, the quiz will show also a Try Again button to retake the quiz again, reloading the quiz from a random question. 
+- All the project pages display a Bootstrap navbar for better navigation experience.
+- The Homepage "index.html" contains text that gives an ideas of some of the most interesting aspects of Italy. After reading the text, the bottom of the page has a start quiz button that allow the user to take the quiz after clicking on it. This button will hide entirely the homepage after clicked, and will start to display the quiz questions written inside the js array in the index.js.
+- Each question will display after choosing an answer a next button to move to the next random question on the click, also each answer button will change color to red if the answer is wrong or green if the answer is correct at the end of the quiz after the score displaying, the quiz will show also a Try Again button to retake the quiz again, reloading the quiz from a random question. 
 At the end of the quiz the user has two different outcomes related to his score.
 
- Outcomes Statement:
+ -The quiz result will show two different outcomes
+ IF and Else Statement:
 
 One outcome ***If*** the user result is **> than 6 correct answers**: 
 - A Youtube documentary "History of Rome" specific on the capital.
@@ -42,11 +40,10 @@ mail.html is linked to JS mail Api, after registering and entering the Api Key, 
 I can receive the name,surname and contact e-mail of any user that decide to fill the form with the purpose of receiving updates or cooperate. 
 
 ## Technologies Applied:
-
 * HTML5, CSS, JavaScript programming languages
+* Jquery(a Javasctip library) very popular and used to simplify Javascrip
 * Bootstrap 4.5.0 to make the website responsive for all users
 * Balsamiq Wireframes to draw my project ideas
-* Jquery(a Javasctip library) very popular and used to simplify Javascript
 * Google Fonts: 'Nerko One', 'cursive', sans-serif.
 * Gitpod I used it as editor to create my code.
 * Git/GitHub platform for the deployment to keep the project in repositories with frequent commits and informative messages.
@@ -67,14 +64,9 @@ The console does not report any errors anymore, execpt one in regard of a favi.i
 
 ## Errors and difficulties
 * I have not exerienced anymore errors inside the console or of any kind except from the favicon error that it is not anything to worry about as it does not effect the fucntionality of the website.
-
-* I have modified the images sizes before loading using my computer preview and reduced their height for small devices and increased for large screen using the media queries in the style.css file.
-
+* I have modified the images sizes before loading using my computer preview 
 * I have not beign able to position in a better place the next button and so the user as to scroll down the page in order to click on it.
-
-* One of the link coming up as outcome of the quiz, the one connecting to the BBC website is not loading anymore the page of the documentary but display an error and the main BBC website. I assume this is due to changes made on the website. The user can still find a documentary about italy from the BBC link. 
-
-
+ 
 ## Credits 
 All the images are taken from https://pxhere.com/ and http://pexel.com (they both provide free domain images)
 
@@ -91,7 +83,7 @@ The questions and the quiz answers are written by me.
 
 ## Future improvements and considerations
 I plan to improve the website introducing better content on the homepage, and replacing the homepage text with the information needed to answer the quiz questions, in away to give at the user the opportunity to test his memory after taking the quiz and checking the score.
-This kind of exercise reading and then testing the memory it is beneficial not only to who wants to exercise his memory but might be beneficial for who is experiencing memory issues. The score would reflect more the memory strenght of the user rather than test his knowledge. 
+This kind of exercise of reading and then testing the memory it would be beneficial not only to who wants to exercise his memory but might be beneficial for who is experiencing memory issues. The score would reflect more the memory strenght of the user rather than test his knowledge. 
 I also would like to implement as I watched on the inspirational video on youtube that I have credited, a timer in a way that the user has a limited timeframe to answer of 6-7 seconds, after that the answer will be counted as a mistake. 
 
 
