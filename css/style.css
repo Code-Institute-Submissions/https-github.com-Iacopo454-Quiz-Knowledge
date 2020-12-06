@@ -22,3 +22,10 @@ body { font-family:"Nerko One","cursive",sans-serif; }
   height:600px;
   background-color:#e7eaf0;
 }
+
+@media screen and (min-width: 300px) {
+.card-img {
+    height: 200px;
+    width: 50%;
+}
+}
