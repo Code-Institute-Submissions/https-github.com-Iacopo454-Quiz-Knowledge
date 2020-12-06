@@ -137,10 +137,8 @@ function startQuiz() {
 
   /** Question index**/
   currentQuestion = 0;
-
   nextQuestion();
 }
-
 /**showing the next question**/
 function nextQuestion() {
   nextButton.classList.add("d-none");
@@ -200,7 +198,7 @@ function selectAnswer(e) {
 function quizOutcome() {
   if (score > 6) {
     $("#outcome").html(`<div class="text-center">  
-         <a href="http://www.bbc.com/travel/europe/italy  
+         <a href="https://www.youtube.com/watch?v=WKpQRXdvAqM 
          target="_blank">Well done you have a good knowledge.Check the Wikipedia link if you want to learn much more about Italy</a> </div>`);
   } else {
     $("#outcome").html(`<div class="text-center">  
@@ -210,7 +208,7 @@ function quizOutcome() {
   }
 }
 
-/**function onlclick add a class colour if correct green or if else red**/
+/**function setClass to add as class a colour if correct green or if else red**/
 function setStatusClass(element, correct) {
   clearStatusClass(element);
   if (correct) {
