@@ -52,4 +52,16 @@ div#map {
     height: 1100px;
   }
 
+<<<<<<< HEAD
+=======
+  /* mail.html */
+
+#project_request {
+    height: 5%;
+    width: 200px;
+    left: 600px;
+    position: absolute;
+}
+
+>>>>>>> 08d25e3615d175995bea32e9cc11ddb3d140a8e7
 }
