@@ -1,7 +1,6 @@
 body {
   font-family: "Nerko One", "cursive", sans-serif;
 }
-
 .card-img {
   height: 550px;
   width: 60%;
@@ -28,6 +27,7 @@ body {
 .card-img {
   height: 200px;
   }
+
 }
 
 @media only screen and (min-width: 368px) {
@@ -51,14 +51,5 @@ div#map {
 #map {
     height: 1100px;
   }
-
-  /* mail.html */
-
-#project_request {
-    height: 5%;
-    width: 200px;
-    left: 600px;
-    position: absolute;
-}
 
 }
